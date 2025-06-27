@@ -1093,6 +1093,7 @@ br.next-line {
   border: 1px solid var(--border-color);
   border-radius: 20px;
   overflow: hidden;
+  cursor: pointer;
 }
 #try .prds-list .prds li img {
   width: 100%;
