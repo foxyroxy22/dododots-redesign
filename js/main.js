@@ -80,7 +80,7 @@ $(document).ready(function () {
   let randomNumber = Math.floor(Math.random() * 4) + 1;
   $(".character")
     .children("img")
-    .attr("src", "/img/characters/0" + randomNumber + ".png");
+    .attr("src", "./img/characters/0" + randomNumber + ".png");
 
   $("#try .visual .character .patch li").hide();
 
@@ -164,13 +164,13 @@ $(document).ready(function () {
 
   // shorts card swiper
   var shorts_vid = new Swiper(".shorts-vid", {
-      effect: "cards",
-      grabCursor: true,
-    });
+    effect: "cards",
+    grabCursor: true,
+  });
 
   // faq click action
   $("#faq ul li .a").hide();
-  $("#faq ul li").click(function() {
+  $("#faq ul li").click(function () {
     $(this).find(".a").slideToggle(300);
   });
 }); //end
