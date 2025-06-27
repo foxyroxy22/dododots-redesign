@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <!-- script -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <div id="wrap">
+      <header>
+        <h1>
+          <a href="#"><img src="img/logos/logo.png" alt="DODODOTS" /></a>
+        </h1>
+
+        <nav>
+          <ul class="gnb">
+            <li><a href="#">about us</a></li>
+            <li><a href="#">rewards</a></li>
+            <li><a href="#">contact us</a></li>
+            <li><a href="#">locations</a></li>
+          </ul>
+        </nav>
+
+        <ul class="utill">
+          <li>
+            <a href="#"><img src="img/pixel_icons/search.png" alt="검색" /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="img/pixel_icons/person.png" alt="마이페이지"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="img/pixel_icons/cart.png" alt="장바구니"
+            /></a>
+          </li>
+        </ul>
+
+        <button type="button" class="ham">
+          <i class="bi bi-list menu"></i>
+          <i class="bi bi-x close"></i>
+        </button>
+      </header>
+
+      <div class="mgnb-wrap">
+        <form>
+          <input type="text" placeholder="search" />
+          <button type="submit">
+            <img src="img/pixel_icons/search.png" alt="search" />
+          </button>
+        </form>
+
+        <ul class="mgnb">
+          <li>
+            <div>
+              shop <img src="img/pixel_icons/arrow.png" alt="slide down" />
+            </div>
+            <ul>
+              <li><a href="#">single</a></li>
+              <li><a href="#">bundle</a></li>
+            </ul>
+          </li>
+          <li><a href="#">about us</a></li>
+          <li><a href="#">rewards</a></li>
+          <li><a href="#">contact us</a></li>
+          <li><a href="#">locations</a></li>
+        </ul>
+        <!-- .mgnb -->
+
+        <div class="mgnb-footer">
+          <a href="#"><span>log in</span></a>
+          <ul class="sns">
+            <li>
+              <a href="#"
+                ><img src="img/pixel_icons/instagram.png" alt="instagram"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="img/pixel_icons/tiktok_pixel.png" alt="tiktok"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <!-- .mgnb-footer -->
+      </div>
+      <!-- .mgnb-wrap -->
+
+      <main>
+        <section id="main-visual">
+          <h2>Level up your <span>skincare game</span></h2>
+          <div class="model">
+            <img src="img/main_visual/model.png" alt="model" />
+          </div>
+
+          <ul class="prds">
+            <li>
+              <div class="img">
+                <img
+                  src="img/products/ribbonit_one.png"
+                  alt="ribbon pimple patch"
+                />
+              </div>
+              <div class="info">
+                <p>ribbonit</p>
+                <div class="shop-now"><a href="#">shop now</a></div>
+              </div>
+            </li>
+            <li>
+              <div class="img">
+                <img
+                  src="img/products/squish_one.png"
+                  alt="tomato pimple patch"
+                />
+              </div>
+              <div class="info">
+                <p>squish</p>
+                <div class="shop-now"><a href="#">shop now</a></div>
+              </div>
+            </li>
+            <li>
+              <div class="img">
+                <img
+                  src="img/products/calmcalm_one.png"
+                  alt="seashell pimple patch"
+                />
+              </div>
+              <div class="info">
+                <p>calmcalm</p>
+                <div class="shop-now"><a href="#">shop now</a></div>
+              </div>
+            </li>
+            <li>
+              <div class="img">
+                <img
+                  src="img/products/spotstar_one.png"
+                  alt="star pimple patch"
+                />
+              </div>
+              <div class="info">
+                <p>spostar</p>
+                <div class="shop-now"><a href="#">shop now</a></div>
+              </div>
+            </li>
+            <li>
+              <div class="img">
+                <img
+                  src="img/products/oopsydaisy_one.png"
+                  alt="daisy pimple patch"
+                />
+              </div>
+              <div class="info">
+                <p>oopsydaisy</p>
+                <div class="shop-now"><a href="#">shop now</a></div>
+              </div>
+            </li>
+          </ul>
+
+          <div class="scroll">
+            <div class="box">
+              <img src="img/pixel_icons/arrow.png" alt="scroll down" />
+            </div>
+            <p>scroll down!</p>
+          </div>
+
+          <ul class="star cross">
+            <li>
+              <img src="img/pixel_icons/stars01.png" alt="star animation" />
+            </li>
+            <li>
+              <img src="img/pixel_icons/stars01.png" alt="star animation" />
+            </li>
+            <li>
+              <img src="img/pixel_icons/stars01.png" alt="star animation" />
+            </li>
+            <li>
+              <img src="img/pixel_icons/stars01.png" alt="star animation" />
+            </li>
+            <li>
+              <img src="img/pixel_icons/stars01.png" alt="star animation" />
+            </li>
+            <li>
+              <img src="img/pixel_icons/stars01.png" alt="star animation" />
+            </li>
+          </ul>
+          <ul class="star falling">
+            <li>
+              <img src="img/pixel_icons/stars02.png" alt="star animation" />
+            </li>
+            <li>
+              <img src="img/pixel_icons/stars02.png" alt="star animation" />
+            </li>
+            <li>
+              <img src="img/pixel_icons/stars02.png" alt="star animation" />
+            </li>
+            <li>
+              <img src="img/pixel_icons/stars02.png" alt="star animation" />
+            </li>
+            <li>
+              <img src="img/pixel_icons/stars02.png" alt="star animation" />
+            </li>
+            <li>
+              <img src="img/pixel_icons/stars02.png" alt="star animation" />
+            </li>
+          </ul>
+        </section>
+        <!-- #main-visual -->
+
+        <section id="best">
+          <ul class="stars">
+            <li>
+              <img src="img/decoration/glowstar_4.png" alt="glowstar_4" />
+            </li>
+            <li>
+              <img src="img/decoration/glowstar_2.png" alt="glowstar_2" />
+            </li>
+            <li>
+              <img src="img/decoration/glowstar_8.png" alt="glowstar_8" />
+            </li>
+            <li><img src="img/decoration/star_8.png" alt="star_8" /></li>
+            <li><img src="img/decoration/star_2.png" alt="star_2" /></li>
+          </ul>
+
+          <div class="title-box">
+            <div class="title">
+              <h3>B</h3>
+              <span>est</span>
+              <h3>S</h3>
+              <span>ellers</span>
+            </div>
+            <!-- .title -->
+            <p>
+              Cutest way to clear your skin — <br class="next-line" />shop the
+              faves
+            </p>
+          </div>
+          <!-- .title-box -->
+
+          <div class="swiper best-list">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <img src="img/products/pawpawpower.png" alt="pawpawpower" />
+                <h5>pawpawpower</h5>
+                <div class="shop-now"><a href="#">shop now</a></div>
+              </li>
+              <li class="swiper-slide">
+                <img src="img/products/bloomy.png" alt="bloomy" />
+                <h5>bloomy</h5>
+                <div class="shop-now"><a href="#">shop now</a></div>
+              </li>
+              <li class="swiper-slide">
+                <img src="img/products/heartattack.png" alt="heartattack" />
+                <h5>heartattack</h5>
+                <div class="shop-now"><a href="#">shop now</a></div>
+              </li>
+              <li class="swiper-slide">
+                <img src="img/products/starpop.png" alt="starpop" />
+                <h5>starpop</h5>
+                <div class="shop-now"><a href="#">shop now</a></div>
+              </li>
+              <li class="swiper-slide">
+                <img src="img/products/berryclear.png" alt="berryclear" />
+                <h5>berryclear</h5>
+                <div class="shop-now"><a href="#">shop now</a></div>
+              </li>
+              <li class="swiper-slide">
+                <img src="img/products/bowwow.png" alt="bowwow" />
+                <h5>bowwow</h5>
+                <div class="shop-now"><a href="#">shop now</a></div>
+              </li>
+              <li class="swiper-slide">
+                <img src="img/products/heartattack.png" alt="heartattack" />
+                <h5>heartattack</h5>
+                <div class="shop-now"><a href="#">shop now</a></div>
+              </li>
+              <li class="swiper-slide">
+                <img src="img/products/moonshot.png" alt="moonshot" />
+                <h5>moonshot</h5>
+                <div class="shop-now"><a href="#">shop now</a></div>
+              </li>
+            </ul>
+          </div>
+          <!-- .best-list -->
+
+          <div class="pink-btn">
+            <a href="#">see all</a>
+          </div>
+          <!-- .pink-btn -->
+        </section>
+        <!-- #best -->
+
+        <div class="bar">
+          <ul class="list01">
+            <li><h6>suitable for all skin types</h6></li>
+            <li><i class="bi bi-dot"></i></li>
+            <li><h6>cover & protect</h6></li>
+            <li><i class="bi bi-dot"></i></li>
+            <li><h6>FDA approved</h6></li>
+            <li><i class="bi bi-dot"></i></li>
+            <li><h6>vegan friendly</h6></li>
+            <li><i class="bi bi-dot"></i></li>
+            <li><h6>worldwide shipping</h6></li>
+            <li><i class="bi bi-dot"></i></li>
+          </ul>
+          <ul class="list02">
+            <li><h6>suitable for all skin types</h6></li>
+            <li><i class="bi bi-dot"></i></li>
+            <li><h6>cover & protect</h6></li>
+            <li><i class="bi bi-dot"></i></li>
+            <li><h6>FDA approved</h6></li>
+            <li><i class="bi bi-dot"></i></li>
+            <li><h6>vegan friendly</h6></li>
+            <li><i class="bi bi-dot"></i></li>
+            <li><h6>worldwide shipping</h6></li>
+            <li><i class="bi bi-dot"></i></li>
+          </ul>
+        </div>
+        <!-- #bar -->
+
+        <section id="try">
+          <div class="visual">
+            <div class="character">
+              <img src="img/characters/01.png" alt="character" />
+
+              <ul class="patch">
+                <li>
+                  <img src="img/products/ribbonit_one.png" alt="ribbonit" />
+                  <img src="img/products/ribbonit_one.png" alt="ribbonit" />
+                </li>
+                <li>
+                  <img src="img/products/calmcalm_one.png" alt="calmcalm" />
+                  <img src="img/products/calmcalm_two.png" alt="calmcalm" />
+                </li>
+                <li>
+                  <img src="img/products/oopsydaisy_one.png" alt="oopsydaisy" />
+                  <img src="img/products/oopsydaisy_one.png" alt="oopsydaisy" />
+                </li>
+                <li>
+                  <img src="img/products/squish_one.png" alt="squish" />
+                  <img src="img/products/squish_one.png" alt="squish" />
+                </li>
+                <li>
+                  <img src="img/products/pawsitive_one.png" alt="pawsitive" />
+                  <img src="img/products/pawsitive_one.png" alt="pawsitive" />
+                </li>
+                <li>
+                  <img src="img/products/spotstar_one.png" alt="spostar" />
+                  <img src="img/products/spotstar_one.png" alt="spostar" />
+                </li>
+              </ul>
+              <!-- .patch -->
+            </div>
+            <!-- .character -->
+
+            <div class="info">
+              <div class="title-box">
+                <div class="title">
+                  <h3>T</h3>
+                  <span>ry</span>
+                  <h3>I</h3>
+                  <span>t</span>
+                  <h3>O</h3>
+                  <span>n</span>
+                </div>
+              </div>
+              <!-- .title-box -->
+
+              <div class="default-message">
+                <h4>
+                  Pick one! <br class="next-line" />I promise I’ll look cuter
+                </h4>
+              </div>
+              <!-- .default-message -->
+
+              <ul class="message">
+                <li>
+                  <h4>ribbonit</h4>
+                  <p class="description">Soft, cute, and clinically strong</p>
+                  <p class="price">24 patches / 8$</p>
+                  <ul class="list">
+                    <li>
+                      <span>No harsh stuff – just oil-absorbing magic</span>
+                    </li>
+                    <li><span>Day & night wear, comfy for hours</span></li>
+                    <li><span>Protects spots & keeps your hands off</span></li>
+                    <li><span>Suitable for all skin types</span></li>
+                  </ul>
+                  <div class="shop-now"><a href="#">shop now</a></div>
+                </li>
+                <li>
+                  <h4>calmcalm</h4>
+                  <p class="description">
+                    Soothing, gentle, and always sea-riously effective
+                  </p>
+                  <p class="price">24 patches / $8</p>
+                  <ul class="list">
+                    <li><span>No nasties – just calming clarity</span></li>
+                    <li><span>Wear all night or under your SPF</span></li>
+                    <li><span>Keeps spots safe from your fingers</span></li>
+                    <li><span>Safe for every skin tide</span></li>
+                  </ul>
+                  <div class="shop-now"><a href="#">shop now</a></div>
+                </li>
+                <li>
+                  <h4>oopsydaisy</h4>
+                  <p class="description">
+                    Fresh, floral, and ready to save your skin
+                  </p>
+                  <p class="price">24 patches / $8</p>
+                  <ul class="list">
+                    <li>
+                      <span
+                        >No harsh ingredients – just skin-soothing power</span
+                      >
+                    </li>
+                    <li><span>Gentle cling for all-day comfort</span></li>
+                    <li><span>Covers blemishes & stops picking</span></li>
+                    <li><span>For every skin type that blooms</span></li>
+                  </ul>
+                  <div class="shop-now"><a href="#">shop now</a></div>
+                </li>
+                <li>
+                  <h4>squish</h4>
+                  <p class="description">Juicy, bold, and built to de-puff</p>
+                  <p class="price">24 patches / $8</p>
+                  <ul class="list">
+                    <li><span>No sting, just oil-zapping action</span></li>
+                    <li><span>Comfy wear from a.m. to p.m.</span></li>
+                    <li><span>Helps hide + heal breakouts</span></li>
+                    <li>
+                      <span>Great for all skin types (and snack lovers)</span>
+                    </li>
+                  </ul>
+                  <div class="shop-now"><a href="#">shop now</a></div>
+                </li>
+                <li>
+                  <h4>pawsitive</h4>
+                  <p class="description">
+                    Peppy, playful, and paws-itively effective
+                  </p>
+                  <p class="price">24 patches / $8</p>
+                  <ul class="list">
+                    <li><span>Zero irritation, max absorption</span></li>
+                    <li><span>All-day comfy wear</span></li>
+                    <li><span>Covers breakouts & curbs picking</span></li>
+                    <li><span>Kind to all skin, furry or not</span></li>
+                  </ul>
+                  <div class="shop-now"><a href="#">shop now</a></div>
+                </li>
+                <li>
+                  <h4>spotstar</h4>
+                  <p class="description">
+                    Sparkly, iconic, and breakout’s worst enemy
+                  </p>
+                  <p class="price">24 patches / $8</p>
+                  <ul class="list">
+                    <li><span>No harsh stuff – just clear-skin magic</span></li>
+                    <li><span>Wears great, day or night</span></li>
+                    <li><span>Protects & heals your spots</span></li>
+                    <li><span>For every skin galaxy</span></li>
+                  </ul>
+                  <div class="shop-now"><a href="#">shop now</a></div>
+                </li>
+              </ul>
+              <!-- .message -->
+            </div>
+            <!-- .info -->
+          </div>
+          <!-- .visual -->
+
+          <div class="swiper prds-list">
+            <ul class="swiper-wrapper prds">
+              <li class="swiper-slide">
+                <img src="img/products/ribbonit.png" alt="ribbonit" />
+                <div class="dim">
+                  <h6>ribbonit</h6>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <img src="img/products/calmcalm.png" alt="calmcalm" />
+                <div class="dim">
+                  <h6>calmcalm</h6>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <img src="img/products/oopsydaisy.png" alt="oopsydaisy" />
+                <div class="dim">
+                  <h6>oopsydaisy</h6>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <img src="img/products/squish.png" alt="squish" />
+                <div class="dim">
+                  <h6>squish</h6>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <img src="img/products/pawsitive.png" alt="pawsitive" />
+                <div class="dim">
+                  <h6>pawsitive</h6>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <img src="img/products/spotstar.png" alt="spotstar" />
+                <div class="dim">
+                  <h6>spotstar</h6>
+                </div>
+              </li>
+            </ul>
+            <!-- .prds -->
+          </div>
+        </section>
+        <!-- #try -->
+
+        <section id="tweezer">
+          <div class="swiper star-bar bar01">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <img src="img/pixel_icons/star01.png" alt="star01" />
+              </li>
+              <li class="swiper-slide">
+                <img src="img/pixel_icons/star02.png" alt="star02" />
+              </li>
+              <li class="swiper-slide">
+                <img src="img/pixel_icons/star03.png" alt="star03" />
+              </li>
+              <li class="swiper-slide">
+                <img src="img/pixel_icons/star04.png" alt="star04" />
+              </li>
+              <li class="swiper-slide">
+                <img src="img/pixel_icons/star05.png" alt="star05" />
+              </li>
+              <li class="swiper-slide">
+                <img src="img/pixel_icons/star01.png" alt="star01" />
+              </li>
+              <li class="swiper-slide">
+                <img src="img/pixel_icons/star02.png" alt="star02" />
+              </li>
+              <li class="swiper-slide">
+                <img src="img/pixel_icons/star03.png" alt="star03" />
+              </li>
+              <li class="swiper-slide">
+                <img src="img/pixel_icons/star04.png" alt="star04" />
+              </li>
+              <li class="swiper-slide">
+                <img src="img/pixel_icons/star05.png" alt="star05" />
+              </li>
+              <li class="swiper-slide">
+                <img src="img/pixel_icons/star01.png" alt="star01" />
+              </li>
+              <li class="swiper-slide">
+                <img src="img/pixel_icons/star02.png" alt="star02" />
+              </li>
+              <li class="swiper-slide">
+                <img src="img/pixel_icons/star03.png" alt="star03" />
+              </li>
+              <li class="swiper-slide">
+                <img src="img/pixel_icons/star04.png" alt="star04" />
+              </li>
+              <li class="swiper-slide">
+                <img src="img/pixel_icons/star05.png" alt="star05" />
+              </li>
+              <li class="swiper-slide">
+                <img src="img/pixel_icons/star01.png" alt="star01" />
+              </li>
+              <li class="swiper-slide">
+                <img src="img/pixel_icons/star02.png" alt="star02" />
+              </li>
+              <li class="swiper-slide">
+                <img src="img/pixel_icons/star03.png" alt="star03" />
+              </li>
+              <li class="swiper-slide">
+                <img src="img/pixel_icons/star04.png" alt="star04" />
+              </li>
+              <li class="swiper-slide">
+                <img src="img/pixel_icons/star05.png" alt="star05" />
+              </li>
+              <li class="swiper-slide">
+                <img src="img/pixel_icons/star01.png" alt="star01" />
+              </li>
+              <li class="swiper-slide">
+                <img src="img/pixel_icons/star02.png" alt="star02" />
+              </li>
+              <li class="swiper-slide">
+                <img src="img/pixel_icons/star03.png" alt="star03" />
+              </li>
+              <li class="swiper-slide">
+                <img src="img/pixel_icons/star04.png" alt="star04" />
+              </li>
+              <li class="swiper-slide">
+                <img src="img/pixel_icons/star05.png" alt="star05" />
+              </li>
+            </ul>
+          </div>
+          <!-- .bar01 -->
+
+          <div class="wrapper">
+            <h6>Tiny Tool, Big Impact</h6>
+            <h2>DODO-TWEEZER</h2>
+
+            <ul class="info">
+              <li><span>Slim, safe, skin-friendly</span></li>
+              <li><span>Keeps your patches clean & precise</span></li>
+              <li><span>Reusable & easy to clean</span></li>
+            </ul>
+            <!-- .info -->
+            <p>Buy 5+ packs and get one FREE!</p>
+            <div class="shop-now"><a href="#">shop now</a></div>
+
+            <ul class="decoration">
+              <li><img src="img/promo/tweezer_cap.png" alt="tweezer_cap" /></li>
+              <li>
+                <img src="img/promo/tweezer_nocap.png" alt="tweezer_nocap" />
+              </li>
+              <li><img src="img/pixel_icons/flash.png" alt="flash" /></li>
+              <li><img src="img/pixel_icons/flash.png" alt="flash" /></li>
+              <li><img src="img/pixel_icons/flash.png" alt="flash" /></li>
+            </ul>
+            <!-- .decoration -->
+          </div>
+          <!-- .wrapper -->
+
+          <div class="swiper star-bar bar02">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <img src="img/pixel_icons/star01.png" alt="star01" />
+              </li>
+              <li class="swiper-slide">
+                <img src="img/pixel_icons/star02.png" alt="star02" />
+              </li>
+              <li class="swiper-slide">
+                <img src="img/pixel_icons/star03.png" alt="star03" />
+              </li>
+              <li class="swiper-slide">
+                <img src="img/pixel_icons/star04.png" alt="star04" />
+              </li>
+              <li class="swiper-slide">
+                <img src="img/pixel_icons/star05.png" alt="star05" />
+              </li>
+              <li class="swiper-slide">
+                <img src="img/pixel_icons/star01.png" alt="star01" />
+              </li>
+              <li class="swiper-slide">
+                <img src="img/pixel_icons/star02.png" alt="star02" />
+              </li>
+              <li class="swiper-slide">
+                <img src="img/pixel_icons/star03.png" alt="star03" />
+              </li>
+              <li class="swiper-slide">
+                <img src="img/pixel_icons/star04.png" alt="star04" />
+              </li>
+              <li class="swiper-slide">
+                <img src="img/pixel_icons/star05.png" alt="star05" />
+              </li>
+              <li class="swiper-slide">
+                <img src="img/pixel_icons/star01.png" alt="star01" />
+              </li>
+              <li class="swiper-slide">
+                <img src="img/pixel_icons/star02.png" alt="star02" />
+              </li>
+              <li class="swiper-slide">
+                <img src="img/pixel_icons/star03.png" alt="star03" />
+              </li>
+              <li class="swiper-slide">
+                <img src="img/pixel_icons/star04.png" alt="star04" />
+              </li>
+              <li class="swiper-slide">
+                <img src="img/pixel_icons/star05.png" alt="star05" />
+              </li>
+              <li class="swiper-slide">
+                <img src="img/pixel_icons/star01.png" alt="star01" />
+              </li>
+              <li class="swiper-slide">
+                <img src="img/pixel_icons/star02.png" alt="star02" />
+              </li>
+              <li class="swiper-slide">
+                <img src="img/pixel_icons/star03.png" alt="star03" />
+              </li>
+              <li class="swiper-slide">
+                <img src="img/pixel_icons/star04.png" alt="star04" />
+              </li>
+              <li class="swiper-slide">
+                <img src="img/pixel_icons/star05.png" alt="star05" />
+              </li>
+              <li class="swiper-slide">
+                <img src="img/pixel_icons/star01.png" alt="star01" />
+              </li>
+              <li class="swiper-slide">
+                <img src="img/pixel_icons/star02.png" alt="star02" />
+              </li>
+              <li class="swiper-slide">
+                <img src="img/pixel_icons/star03.png" alt="star03" />
+              </li>
+              <li class="swiper-slide">
+                <img src="img/pixel_icons/star04.png" alt="star04" />
+              </li>
+              <li class="swiper-slide">
+                <img src="img/pixel_icons/star05.png" alt="star05" />
+              </li>
+            </ul>
+          </div>
+          <!-- .bar02 -->
+        </section>
+        <!-- #tweezer -->
+
+        <section id="shorts">
+          <div class="title-box">
+            <div class="title">
+              <h3>s</h3>
+              <span>ee</span>
+              <h3>o</h3>
+              <span>ur</span>
+              <br class="next-line" />
+              <h3>p</h3>
+              <span>roducts</span>
+            </div>
+            <!-- .title -->
+            <p>Slide to see real results!</p>
+          </div>
+          <!-- .title-box -->
+
+          <div class="swiper shorts-vid">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <video
+                  src="video/shorts01.mp4"
+                  muted
+                  autoplay
+                  playsinline
+                  loop
+                ></video>
+              </li>
+              <li class="swiper-slide">
+                <video
+                  src="video/shorts02.mp4"
+                  muted
+                  autoplay
+                  playsinline
+                  loop
+                ></video>
+              </li>
+              <li class="swiper-slide">
+                <video
+                  src="video/shorts03.mp4"
+                  muted
+                  autoplay
+                  playsinline
+                  loop
+                ></video>
+              </li>
+              <li class="swiper-slide">
+                <video
+                  src="video/shorts04.mp4"
+                  muted
+                  autoplay
+                  playsinline
+                  loop
+                ></video>
+              </li>
+              <li class="swiper-slide">
+                <video
+                  src="video/shorts05.mp4"
+                  muted
+                  autoplay
+                  playsinline
+                  loop
+                ></video>
+              </li>
+              <li class="swiper-slide">
+                <video
+                  src="video/shorts06.mp4"
+                  muted
+                  autoplay
+                  playsinline
+                  loop
+                ></video>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="stars">
+            <li>
+              <img src="img/decoration/glowstar_4.png" alt="glowstar_4" />
+            </li>
+            <li>
+              <img src="img/decoration/glowstar_2.png" alt="glowstar_2" />
+            </li>
+            <li>
+              <img src="img/decoration/glowstar_8.png" alt="glowstar_8" />
+            </li>
+            <li><img src="img/decoration/star_8.png" alt="star_8" /></li>
+            <li><img src="img/decoration/star_2.png" alt="star_2" /></li>
+          </ul>
+          <!-- .stars -->
+
+          <ul class="comments">
+            <li>[Real skin. Real magic ✨]</li>
+            <li>[Just one patch away 💫]</li>
+            <li>[Glow up in pixels 🌟]</li>
+            <li>[✨ So satisfying]</li>
+            <li>[Real skin, real results 💫]</li>
+          </ul>
+          <!-- .comments -->
+        </section>
+        <!-- #shorts -->
+
+        <section id="member">
+          <div class="window">
+            <h4>
+              join our <br class="next-line" /><span>happiness club</span>
+            </h4>
+            <p>
+              Become a dotter today to earn points &<br class="next-line" />
+              exclusive rewards every time you shop.
+            </p>
+            <div class="pink-btn">
+              <a href="#">join us</a>
+            </div>
+            <!-- .pink-btn -->
+
+            <ul class="stickers">
+              <li><img src="img/pixel_icons/bow.png" alt="bow" /></li>
+              <li><img src="img/pixel_icons/clover.png" alt="clover" /></li>
+              <li><img src="img/pixel_icons/wing.png" alt="wing" /></li>
+              <li><img src="img/pixel_icons/cherry.png" alt="cherry" /></li>
+            </ul>
+          </div>
+          <!-- .window -->
+        </section>
+        <!-- #member -->
+
+        <section id="effect">
+          <ul>
+            <li>
+              <h5>Covers and protects</h5>
+              <img src="img/pixel_icons/shield.png" alt="shield" />
+              <h5>every little blemish</h5>
+            </li>
+            <li>
+              <img src="img/pixel_icons/leaves.png" alt="leaves" />
+              <h5>No harsh chemicals — just skin-loving care</h5>
+            </li>
+            <li>
+              <h5>Prevents picking</h5>
+              <img src="img/pixel_icons/hand.png" alt="hand" />
+              <h5>healing should be gentle</h5>
+            </li>
+            <li>
+              <h5>Powerfully absorbs oil</h5>
+              <img src="img/pixel_icons/drop.png" alt="drop" />
+              <h5>to calm your skin</h5>
+            </li>
+            <li>
+              <img src="img/pixel_icons/sun.png" alt="sun" />
+              <h5># Day or night, it stays with you</h5>
+              <img src="img/pixel_icons/moon.png" alt="moon" />
+            </li>
+          </ul>
+        </section>
+        <!-- #effect -->
+
+        <div class="bar">
+          <ul class="list01">
+            <li><h6>suitable for all skin types</h6></li>
+            <li><i class="bi bi-dot"></i></li>
+            <li><h6>cover & protect</h6></li>
+            <li><i class="bi bi-dot"></i></li>
+            <li><h6>FDA approved</h6></li>
+            <li><i class="bi bi-dot"></i></li>
+            <li><h6>vegan friendly</h6></li>
+            <li><i class="bi bi-dot"></i></li>
+            <li><h6>worldwide shipping</h6></li>
+            <li><i class="bi bi-dot"></i></li>
+          </ul>
+          <ul class="list02">
+            <li><h6>suitable for all skin types</h6></li>
+            <li><i class="bi bi-dot"></i></li>
+            <li><h6>cover & protect</h6></li>
+            <li><i class="bi bi-dot"></i></li>
+            <li><h6>FDA approved</h6></li>
+            <li><i class="bi bi-dot"></i></li>
+            <li><h6>vegan friendly</h6></li>
+            <li><i class="bi bi-dot"></i></li>
+            <li><h6>worldwide shipping</h6></li>
+            <li><i class="bi bi-dot"></i></li>
+          </ul>
+        </div>
+        <!-- #bar -->
+
+        <section id="faq">
+          <div class="title-box">
+            <div class="title">
+              <h3>faq</h3>
+            </div>
+            <!-- .title -->
+            <p>Have more questions? Contact us</p>
+            <p>
+              If you have any additional questions,<br />send us an email at
+              hello@dododots.com
+            </p>
+          </div>
+          <!-- .title-box -->
+
+          <ul>
+            <li>
+              <p class="q">What are the ingredients?</p>
+              <p class="a">
+                Our Dododots pimple patches are made of 100% hydrocolloid
+                material. The same clinical-grade wound dressing material
+                doctors use on patients after surgery.
+              </p>
+            </li>
+            <li>
+              <p class="q">
+                How long does it take to see results <br />
+                when using Dododots?
+              </p>
+              <p class="a">
+                Yes, our patches are suitable for all skin types, whether
+                acne-prone, sensitive, oily, dry, combination or normal.
+              </p>
+            </li>
+            <li>
+              <p class="q">Can it work on all types of acne?</p>
+              <p class="a">
+                As with all skincare, our pimple patches will work differently
+                on different types of skin and acne. <br />
+
+                Our patches work best on pus-filled acne such as papules and
+                pustules. Customers have also reported that our patches
+                flattened their newly-formed acne after ONE day of usage. <br />
+
+                This does not apply to closed comedones, milia and cystic acne.
+                For these types of acne, our patches can help to cover and
+                protect the skin from environmental triggers thus prevent
+                further inflammation.
+              </p>
+            </li>
+            <li>
+              <p class="q">Is it suitable for sensitive skin?</p>
+              <p class="a">
+                Some customers see results in 1-2 days, while others see results
+                after 1 week of using Dododots. As with most skincare products,
+                results differ with different individuals with different skin
+                types.
+              </p>
+            </li>
+          </ul>
+        </section>
+        <!-- #faq -->
+      </main>
+
+      <footer>
+        <div class="f-logo"></div>
+        <div class="f-bottom">
+          <div class="f-info">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Refund Policy</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms Of Service</a></li>
+            </ul>
+
+            <ul>
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
+            </ul>
+          </div>
+          <!-- .f-info -->
+        </div>
+        <!-- .f-bottom -->
+      </footer>
+    </div>
+    <!-- #wrap -->
+  </body>
+</html>
