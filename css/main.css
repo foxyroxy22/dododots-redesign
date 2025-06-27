@@ -1818,7 +1818,7 @@ br.next-line {
   margin: 20px 0 10px;
 }
 
-#faq ul {
+#faq .faq-list {
   width: max-content;
   position: relative;
   display: grid;
@@ -1834,39 +1834,39 @@ br.next-line {
     transform: translate(0, 20px);
   }
 }
-#faq ul li {
+#faq .faq-list li {
   position: relative;
   height: max-content;
   width: 800px;
   cursor: pointer;
 }
-#faq ul li:nth-child(1) {
+#faq .faq-list li:nth-child(1) {
   animation: cloud 1.5s infinite alternate;
   animation-delay: 1.2s;
 }
-#faq ul li:nth-child(2) {
+#faq .faq-list li:nth-child(2) {
   animation: cloud 1.2s infinite alternate;
   animation-delay: 1.5s;
 }
-#faq ul li:nth-child(3) {
+#faq .faq-list li:nth-child(3) {
   animation: cloud 1.7s infinite alternate;
   animation-delay: 0.8s;
 }
-#faq ul li:nth-child(4) {
+#faq .faq-list li:nth-child(4) {
   animation: cloud 1.1s infinite alternate;
   animation-delay: 0.5s;
 }
 
-#faq ul li .q {
+#faq .faq-list li .q {
   padding: 130px 0 100px;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 600;
 }
-#faq ul li .a {
+#faq .faq-list li .a {
   font-size: 2rem;
 }
-#faq ul li .q::before {
+#faq .faq-list li .q::before {
   content: "";
   background: url(../img/pixel_icons/faq1.png) no-repeat center / contain;
   width: 500px;
@@ -1878,44 +1878,144 @@ br.next-line {
   transform: translateX(-50%);
   z-index: -1;
 }
-#faq ul li:nth-child(2) .q::before {
+#faq .faq-list li:nth-child(2) .q::before {
   background: url(../img/pixel_icons/faq2.png) no-repeat center / contain;
 }
-#faq ul li:nth-child(3) .q::before {
+#faq .faq-list li:nth-child(3) .q::before {
   background: url(../img/pixel_icons/faq3.png) no-repeat center / contain;
 }
-#faq ul li:nth-child(4) .q::before {
+#faq .faq-list li:nth-child(4) .q::before {
   background: url(../img/pixel_icons/faq4.png) no-repeat center / contain;
 }
 
 @media (max-width: 1620px) {
-  #faq ul {
+  #faq .faq-list {
     gap: 0 50px;
   }
-  #faq ul li {
+  #faq .faq-list li {
     width: 500px;
   }
 }
 
 @media (max-width: 1068px) {
-  #faq ul {
+  #faq .faq-list {
     grid-template-columns: 1fr;
     gap: 20px;
   }
-  #faq ul li .q {
+  #faq .faq-list li .q {
     font-size: 2.5rem;
   }
 }
 
 @media (max-width: 550px) {
-  #faq ul li {
+  #faq .faq-list li {
     width: 300px;
   }
-  #faq ul li .q {
+  #faq .faq-list li .q {
     font-size: 2rem;
     padding: 130px 0 80px;
   }
-  #faq ul li .q::before {
+  #faq .faq-list li .q::before {
     width: 350px;
   }
+}
+
+#faq .star li {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+}
+#faq .star li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes glowing {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  70% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+#faq .star.cross li {
+  animation: glowing 1s ease-in-out infinite alternate;
+}
+#faq .star.cross li:nth-child(1) {
+  top: 10%;
+  left: 10%;
+  animation-delay: 0.5s;
+}
+#faq .star.cross li:nth-child(2) {
+  top: 40%;
+  left: 3%;
+  animation-delay: 1.3s;
+}
+#faq .star.cross li:nth-child(3) {
+  top: 80%;
+  left: 20%;
+  animation-delay: 0.8s;
+}
+#faq .star.cross li:nth-child(4) {
+  top: 13%;
+  right: 7%;
+  animation-delay: 0.3s;
+}
+#faq .star.cross li:nth-child(5) {
+  top: 50%;
+  right: 20%;
+  animation-delay: 1.2s;
+}
+#faq .star.cross li:nth-child(6) {
+  top: 80%;
+  right: 10%;
+}
+
+@keyframes falling {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translate(-70px, 50px);
+    opacity: 1;
+  }
+}
+#faq .star.falling li {
+  animation: falling 3s ease-in infinite;
+}
+#faq .star.falling li:nth-child(1) {
+  top: 23%;
+  left: 30%;
+  animation-delay: 1s;
+}
+#faq .star.falling li:nth-child(2) {
+  top: 50%;
+  left: 10%;
+  animation-delay: 0.5s;
+}
+#faq .star.falling li:nth-child(3) {
+  top: 80%;
+  left: 30%;
+}
+#faq .star.falling li:nth-child(4) {
+  top: 25%;
+  right: 33%;
+  animation-delay: 0.5s;
+}
+#faq .star.falling li:nth-child(5) {
+  top: 40%;
+  right: 12%;
+  animation-delay: 1.5s;
+}
+#faq .star.falling li:nth-child(6) {
+  top: 90%;
+  right: 30%;
 }
